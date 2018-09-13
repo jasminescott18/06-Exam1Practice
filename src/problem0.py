@@ -311,7 +311,7 @@ def problem0c(circle, n, window):
     """
 
     radius = 20
-    point = rg.Point(px, py)
+    point = rg.Point(300, 200)
 
     circle = rg.Circle(point, radius)
 
@@ -319,7 +319,7 @@ def problem0c(circle, n, window):
 
         circle.attach_to(window)
 
-        x = x + radius
+        point = rg.point((300 + (20 * k), 2--)
 
     window.render(.5)
 
