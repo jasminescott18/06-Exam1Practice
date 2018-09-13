@@ -170,7 +170,7 @@ def problem0a(n):
         return False
 
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # COMPLETED: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
@@ -315,7 +315,6 @@ def problem0c(circle, n, window):
       :type n: int
       :type window: rg.RoseWindow
     """
-
     for k in range(n):
         circle.attach_to(window)
 
