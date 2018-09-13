@@ -158,7 +158,7 @@ def problem0a(n):
       -- If the given integer is 246, this function returns False,
            since (2 + 4 + 6) is 12, which is NOT odd.
     """
-    if sum_of_digits(n) // 2 == 0:
+    if (sum_of_digits(n) // 2) == 1:
         return True
     else:
         return False
@@ -234,6 +234,13 @@ def problem0b(n):
       -- If n is 200, the correct answer is 46,
            since there are 46 primes between 2 and 200.
      """
+    count = 0
+    j = 2
+    for k in range(n - 1):
+        if is_prime (j +(k*1)) == True:
+            count = count + 1
+    return count
+
     # ------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
