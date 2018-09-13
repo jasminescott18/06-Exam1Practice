@@ -142,6 +142,12 @@ def run_test_problem0a():
     actual = problem0a(730931)
     print_actual_result_of_test(expected, actual, test_results)
 
+    # Test 6:
+    # expected = True
+    # actual = problem0a(306)
+    # print('Test 6 expected:', expected)
+    # print('       actual:', actual)
+
 
 def problem0a(n):
     """
@@ -158,7 +164,7 @@ def problem0a(n):
       -- If the given integer is 246, this function returns False,
            since (2 + 4 + 6) is 12, which is NOT odd.
     """
-    if (sum_of_digits(n) // 2) == 1:
+    if sum_of_digits(n) % 2 == 1:
         return True
     else:
         return False
@@ -237,12 +243,12 @@ def problem0b(n):
     count = 0
     j = 2
     for k in range(n - 1):
-        if is_prime (j +(k*1)) == True:
+        if is_prime(j + (k*1)):
             count = count + 1
     return count
 
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # COMPLETED: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
@@ -310,16 +316,8 @@ def problem0c(circle, n, window):
       :type window: rg.RoseWindow
     """
 
-    radius = 20
-    point = rg.Point(300, 200)
-
-    circle = rg.Circle(point, radius)
-
-    for _ in range(n):
-
+    for k in range(n):
         circle.attach_to(window)
-
-        point = rg.point((300 + (20 * k), 2--)
 
     window.render(.5)
 
