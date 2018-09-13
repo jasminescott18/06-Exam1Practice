@@ -197,7 +197,7 @@ def problem1a(m, n):
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this TEST function.
+    # COMPLETED: 5. Implement this TEST function.
     #   It TESTS the  problem1b  function defined below.
     #   Include at least **   4   ** tests.  Use the usual form:
     #
@@ -228,13 +228,13 @@ def run_test_problem1b():
     print('    actual: ', actual)
 
     # Test 3
-    expected = 234
+    expected = 31
     actual = problem1b(10, 15)
     print('Test 3 expected:', expected)
     print('    actual: ', actual)
 
     # Test 4
-    expected = 234
+    expected = 20
     actual = problem1b(7, 12)
     print('Test 4 expected:', expected)
     print('    actual: ', actual)
@@ -265,7 +265,7 @@ def problem1b(m, f):
     return count
 
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # COMPLETED: 6. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     ####################################################################
