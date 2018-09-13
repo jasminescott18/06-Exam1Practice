@@ -309,6 +309,21 @@ def problem0c(circle, n, window):
       :type n: int
       :type window: rg.RoseWindow
     """
+
+    radius = 20
+    point = rg.Point(px, py)
+
+    circle = rg.Circle(point, radius)
+
+    for _ in range(n):
+
+        circle.attach_to(window)
+
+        x = x + radius
+
+    window.render(.5)
+
+
     # ------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
