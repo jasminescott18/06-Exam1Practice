@@ -148,7 +148,7 @@ def run_test_problem1a():
 
     # Test 3:
     expected = 1.27818
-    answer = problem1a(2, 3)
+    actual = problem1a(2, 3)
     print('Test 3 expected:', expected)
     print('       actual: ' , actual)
 
@@ -157,6 +157,7 @@ def run_test_problem1a():
     actual = problem1a(1, 4)
     print('Test 4 expected:', expected)
     print('       actual: ', actual)
+
 
 def problem1a(m, n):
     """
@@ -214,6 +215,30 @@ def run_test_problem1b():
     print('Testing the   problem1b   function:')
     print('--------------------------------------------------')
 
+    # Test 1
+    expected = 6
+    actual = problem1b(4, 5)
+    print('Test 1 expected:', expected)
+    print('    actual: ', actual)
+
+    # Test 2
+    expected = 8
+    actual = problem1b(2, 10)
+    print('Test 2 expected:', expected)
+    print('    actual: ', actual)
+
+    # Test 3
+    expected = 234
+    actual = problem1b(10, 15)
+    print('Test 3 expected:', expected)
+    print('    actual: ', actual)
+
+    # Test 4
+    expected = 234
+    actual = problem1b(7, 12)
+    print('Test 4 expected:', expected)
+    print('    actual: ', actual)
+
 
 def problem1b(m, f):
     """
@@ -231,6 +256,14 @@ def problem1b(m, f):
       -- If m is 5 and f is 40, the correct answer is 44,
            since there are 44 primes between 5 and 200.
      """
+    j = f * m
+    o = j - m
+    count = 0
+    for k in range(o + 1):
+        if is_prime(m + k):
+            count = count + 1
+    return count
+
     # ------------------------------------------------------------------
     # TODO: 6. Implement and test this function.
     #   Note that you should write its TEST function first (above).
