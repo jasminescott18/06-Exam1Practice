@@ -150,7 +150,7 @@ def run_test_problem1a():
     expected = 1.27818
     actual = problem1a(2, 3)
     print('Test 3 expected:', expected)
-    print('       actual: ' , actual)
+    print('       actual: ', actual)
 
     # Test 4:
     expected = 1.64778
@@ -302,7 +302,6 @@ def run_test_problem1c():
     actual = problem1c(11)
     print_actual_result_of_test(expected, actual, test_results)
 
-
     # Test 3:
     expected = 33
     print_expected_result_of_test([25], expected, test_results, format_string)
@@ -358,12 +357,24 @@ def problem1c(n):
            and the product of those numbers is 223092870,
            and the sum of the digits in 223092870 is 33.
     """
-    product = 1
-    for k in range(n):
-        value = 2 + k
-        if is_prime(value eturns True
-            product = product * is_prime(value)
-        return sum_of_digits(product)
+    """"
+        make a variable for counting the amount of primes
+        makes a counter variable (product)
+        plug tempNum (product + value) into is_prim
+            if true:
+                add to counting var for amount of prime
+            if false:
+                do nothing
+    """
+    m = n-1
+    j = 1
+    n = 2
+    for k in range(m):
+        if is_prime(n) == True:
+            j = j * n
+        n = n + 1
+    return sum_of_digits(j)
+
     # ------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #          Tests have been written for you (above).
