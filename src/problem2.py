@@ -132,6 +132,7 @@ def problem2a(circle, rectangle, window):
     #    TIME ESTIMATE:   10 to 15 minutes.
     # ------------------------------------------------------------------
 
+
 def run_test_problem2b():
     """ Tests the  problem2b   function. """
     print()
@@ -193,6 +194,29 @@ def problem2b(rect, n, delta, win):
       :type delta:  int
       :type win:    rg.RoseWindow
     """
+    x1 = rect.corner_1.x
+    y1 = rect.corner_1.y
+
+    x2 = rect.corner_2.x
+    y2 = rect.corner_2.y
+
+    center_x = x2 - x1 / 2
+    center_y = y2 - y1 / 2
+
+
+    center = rg.Point(center_x, center_y)
+
+    rect.attach_to(window)
+    for k in range(n):
+
+        x3 = rect.corner_1.x * (2 * delta)
+        y3 = rect.cotner_1.y * (2 * delta)
+
+        x4 = rect.corner_2.x * (2 * delta)
+        y4 = rect.corner_2.y * (2 * delta)
+
+        rectangle = rg.Point(center, )
+
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
