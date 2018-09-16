@@ -200,25 +200,27 @@ def problem2b(rect, n, delta, win):
     x2 = rect.corner_2.x
     y2 = rect.corner_2.y
 
-    center_x = x2 - x1 / 2
-    center_y = y2 - y1 / 2
+    rect.attach_to(win)
 
+    for k in range(n - 1):
 
-    center = rg.Point(center_x, center_y)
+        x3 = x1 - ((2 + k) * delta)
+        y3 = y1 + ((2 + k) * delta)
 
-    rect.attach_to(window)
-    for k in range(n):
+        x4 = x2 + ((2 + k) * delta)
+        y4 = y2 - ((2 + k) * delta)
 
-        x3 = rect.corner_1.x * (2 * delta)
-        y3 = rect.cotner_1.y * (2 * delta)
+        center_x2 = rg.Point(x3, y3)
+        center_y2 = rg.Point(x4, y4)
 
-        x4 = rect.corner_2.x * (2 * delta)
-        y4 = rect.corner_2.y * (2 * delta)
+        rectangle1 = rg.Rectangle(center_x2, center_y2)
 
-        rectangle = rg.Point(center, )
+        rectangle1.attach_to(win)
+
+    win.render()
 
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # PARTIAL: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
     # ------------------------------------------------------------------
