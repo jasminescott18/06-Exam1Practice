@@ -376,7 +376,7 @@ def problem1c(n):
     return sum_of_digits(product)
 
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # COMPLETED: 7. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
