@@ -367,13 +367,13 @@ def problem1c(n):
                 do nothing
     """
     m = n-1
-    j = 1
+    product = 1
     n = 2
     for k in range(m):
         if is_prime(n) == True:
-            j = j * n
+            product = product * n
         n = n + 1
-    return sum_of_digits(j)
+    return sum_of_digits(product)
 
     # ------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
