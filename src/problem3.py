@@ -232,6 +232,19 @@ def problem3b(m, point1):
         :type m:      int
         :type point1: rg.Point
     """
+
+    window = rg.RoseWindow(400, 650)
+    for k in range(m):
+        x = point1.x
+        y = point1.y + 60
+        point1 = rg.Point(x, y)
+        problem3a(window, point1, (2 * (k + 1)) - 1)
+    window.continue_on_mouse_click()
+    window.close_on_mouse_click()
+
+
+
+
     # ------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
