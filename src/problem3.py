@@ -161,10 +161,10 @@ def problem3a(window, point, n):
 
         line2 = rg.Line(point3, point4)
         line2.thickness = (2 * (k + 1)) - 1
-        total = total + line2.thickness
         line2.attach_to(window)
         if line2.thickness > 13:
             line2.thickness = 13
+        total = total + line2.thickness
     window.render()
     return total
 
